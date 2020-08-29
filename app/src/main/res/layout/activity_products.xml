@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/products_cl_main"
+    tools:context=".ProductsActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/products_cl_top"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    app:layout_constraintHeight_percent="0.01"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/products_txt_no_prods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="NO prods"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintHeight_percent="0.87"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/products_cl_top"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/products_cl_middle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.99"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/products_cl_top">
+
+        <GridView
+            android:background="#00FFFF11"
+            android:id="@+id/products_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:stretchMode="spacingWidthUniform"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

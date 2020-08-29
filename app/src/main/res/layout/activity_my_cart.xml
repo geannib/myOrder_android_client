@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart_cl_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyCartActivity">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listView_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.85"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/cart_cl_summary"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cart_cl_summary"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintBottom_toTopOf="@id/cart_cl_bottom"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <TextView
+            android:id="@+id/cart_summary_value_total0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="total0"
+            android:layout_marginRight="8dp"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/cart_summary_value_transport"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="transport"
+            android:layout_marginRight="8dp"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cart_summary_value_total0"/>
+
+        <TextView
+            android:id="@+id/cart_summary_value_total"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Total total"
+            android:layout_marginRight="8dp"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+<!--        -->
+        <TextView
+            android:id="@+id/cart_summary_label_total0"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="total0"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/cart_summary_label_transport"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="transport"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cart_summary_label_total0"/>
+
+        <TextView
+            android:id="@+id/cart_summary_label_total"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Total total"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintHeight_percent="0.33"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cart_cl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/cart_txt_trimite"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@color/colorSelgrosRed"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:text="TRIMITE COMANDA"
+                app:layout_constraintHeight_percent="0.9"
+                app:layout_constraintWidth_percent="0.9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

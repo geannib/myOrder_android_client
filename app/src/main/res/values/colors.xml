@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#FF0000</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!--Categories-->
+    <color name="menuCaroucelTexUnseelcted">#3B3A3A</color>
+    <color name="menuCaroucelTextSelcted">#FFFFFF</color>
+    <color name="menuCaroucelSelectedBackground">#1E4180</color>
+
+<!--    Selgros-->
+    <color name="colorSelgrosRed">#E5001F</color>
+    <color name="colorSelgrosWhite">#E5001F</color>
+    <color name="colorGrayBackground">#f5f5f0</color>
+</resources>
